@@ -1,0 +1,881 @@
+{
+  "debugbar.openhandler": {
+    "name": "debugbar.openhandler",
+    "domain": null,
+    "action": "Barryvdh\\Debugbar\\Controllers\\OpenHandlerController@handle",
+    "uri": "_debugbar/open",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "debugbar.clockwork": {
+    "name": "debugbar.clockwork",
+    "domain": null,
+    "action": "Barryvdh\\Debugbar\\Controllers\\OpenHandlerController@clockwork",
+    "uri": "_debugbar/clockwork/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "debugbar.telescope": {
+    "name": "debugbar.telescope",
+    "domain": null,
+    "action": "Barryvdh\\Debugbar\\Controllers\\TelescopeController@show",
+    "uri": "_debugbar/telescope/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "debugbar.assets.css": {
+    "name": "debugbar.assets.css",
+    "domain": null,
+    "action": "Barryvdh\\Debugbar\\Controllers\\AssetController@css",
+    "uri": "_debugbar/assets/stylesheets",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "debugbar.assets.js": {
+    "name": "debugbar.assets.js",
+    "domain": null,
+    "action": "Barryvdh\\Debugbar\\Controllers\\AssetController@js",
+    "uri": "_debugbar/assets/javascript",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "debugbar.cache.delete": {
+    "name": "debugbar.cache.delete",
+    "domain": null,
+    "action": "Barryvdh\\Debugbar\\Controllers\\CacheController@delete",
+    "uri": "_debugbar/cache/{key}/{tags?}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "ignition.healthCheck": {
+    "name": "ignition.healthCheck",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\HealthCheckController",
+    "uri": "_ignition/health-check",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ignition.executeSolution": {
+    "name": "ignition.executeSolution",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\ExecuteSolutionController",
+    "uri": "_ignition/execute-solution",
+    "method": [
+      "POST"
+    ]
+  },
+  "ignition.shareReport": {
+    "name": "ignition.shareReport",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\ShareReportController",
+    "uri": "_ignition/share-report",
+    "method": [
+      "POST"
+    ]
+  },
+  "ignition.scripts": {
+    "name": "ignition.scripts",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\ScriptController",
+    "uri": "_ignition/scripts/{script}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ignition.styles": {
+    "name": "ignition.styles",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\StyleController",
+    "uri": "_ignition/styles/{style}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "cypress.factory": {
+    "name": "cypress.factory",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@factory",
+    "uri": "__cypress__/factory",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.login": {
+    "name": "cypress.login",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@login",
+    "uri": "__cypress__/login",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.logout": {
+    "name": "cypress.logout",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@logout",
+    "uri": "__cypress__/logout",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.artisan": {
+    "name": "cypress.artisan",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@artisan",
+    "uri": "__cypress__/artisan",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.run-php": {
+    "name": "cypress.run-php",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@runPhp",
+    "uri": "__cypress__/run-php",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.csrf-token": {
+    "name": "cypress.csrf-token",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@csrfToken",
+    "uri": "__cypress__/csrf_token",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "cypress.routes": {
+    "name": "cypress.routes",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@routes",
+    "uri": "__cypress__/routes",
+    "method": [
+      "POST"
+    ]
+  },
+  "login": {
+    "name": "login",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\AuthenticatedSessionController@create",
+    "uri": "login",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "": {
+    "name": null,
+    "domain": null,
+    "action": "App\\Http\\Controllers\\FbController@facebookSignin",
+    "uri": "auth/facebook/callback",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "logout": {
+    "name": "logout",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\AuthenticatedSessionController@destroy",
+    "uri": "logout",
+    "method": [
+      "POST"
+    ]
+  },
+  "password.request": {
+    "name": "password.request",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\PasswordResetLinkController@create",
+    "uri": "forgot-password",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "password.reset": {
+    "name": "password.reset",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\NewPasswordController@create",
+    "uri": "reset-password/{token}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "password.email": {
+    "name": "password.email",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\PasswordResetLinkController@store",
+    "uri": "forgot-password",
+    "method": [
+      "POST"
+    ]
+  },
+  "password.update": {
+    "name": "password.update",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\NewPasswordController@store",
+    "uri": "reset-password",
+    "method": [
+      "POST"
+    ]
+  },
+  "register": {
+    "name": "register",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\RegisteredUserController@create",
+    "uri": "register",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "verification.notice": {
+    "name": "verification.notice",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\EmailVerificationPromptController@__invoke",
+    "uri": "email/verify",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "verification.verify": {
+    "name": "verification.verify",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\VerifyEmailController@__invoke",
+    "uri": "email/verify/{id}/{hash}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "verification.send": {
+    "name": "verification.send",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\EmailVerificationNotificationController@store",
+    "uri": "email/verification-notification",
+    "method": [
+      "POST"
+    ]
+  },
+  "user-profile-information.update": {
+    "name": "user-profile-information.update",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\ProfileInformationController@update",
+    "uri": "user/profile-information",
+    "method": [
+      "PUT"
+    ]
+  },
+  "user-password.update": {
+    "name": "user-password.update",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\PasswordController@update",
+    "uri": "user/password",
+    "method": [
+      "PUT"
+    ]
+  },
+  "password.confirm": {
+    "name": "password.confirm",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\ConfirmablePasswordController@show",
+    "uri": "user/confirm-password",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "password.confirmation": {
+    "name": "password.confirmation",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\ConfirmedPasswordStatusController@show",
+    "uri": "user/confirmed-password-status",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "two-factor.login": {
+    "name": "two-factor.login",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\TwoFactorAuthenticatedSessionController@create",
+    "uri": "two-factor-challenge",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "two-factor.enable": {
+    "name": "two-factor.enable",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\TwoFactorAuthenticationController@store",
+    "uri": "user/two-factor-authentication",
+    "method": [
+      "POST"
+    ]
+  },
+  "two-factor.disable": {
+    "name": "two-factor.disable",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\TwoFactorAuthenticationController@destroy",
+    "uri": "user/two-factor-authentication",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "two-factor.qr-code": {
+    "name": "two-factor.qr-code",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\TwoFactorQrCodeController@show",
+    "uri": "user/two-factor-qr-code",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "two-factor.recovery-codes": {
+    "name": "two-factor.recovery-codes",
+    "domain": null,
+    "action": "Laravel\\Fortify\\Http\\Controllers\\RecoveryCodeController@index",
+    "uri": "user/two-factor-recovery-codes",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "dashboard": {
+    "name": "dashboard",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\DashboardController@index",
+    "uri": "dashboard",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "users.index": {
+    "name": "users.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@index",
+    "uri": "users",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "users.create": {
+    "name": "users.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@create",
+    "uri": "users/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "users.store": {
+    "name": "users.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@store",
+    "uri": "users",
+    "method": [
+      "POST"
+    ]
+  },
+  "users.show": {
+    "name": "users.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@show",
+    "uri": "users/{user}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "users.edit": {
+    "name": "users.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@edit",
+    "uri": "users/{user}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "users.update": {
+    "name": "users.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@update",
+    "uri": "users/{user}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "users.destroy": {
+    "name": "users.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@destroy",
+    "uri": "users/{user}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "users.data": {
+    "name": "users.data",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@data",
+    "uri": "users/data/filter",
+    "method": [
+      "POST"
+    ]
+  },
+  "users.export": {
+    "name": "users.export",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@export",
+    "uri": "users/data/export",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "users.import": {
+    "name": "users.import",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@import",
+    "uri": "users/data/import",
+    "method": [
+      "POST"
+    ]
+  },
+  "groups.index": {
+    "name": "groups.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GroupController@index",
+    "uri": "groups",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "groups.data": {
+    "name": "groups.data",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GroupController@data",
+    "uri": "groups/filter",
+    "method": [
+      "POST"
+    ]
+  },
+  "interests.index": {
+    "name": "interests.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\InterestController@index",
+    "uri": "interests",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "interests.create": {
+    "name": "interests.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\InterestController@create",
+    "uri": "interests/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "interests.store": {
+    "name": "interests.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\InterestController@store",
+    "uri": "interests",
+    "method": [
+      "POST"
+    ]
+  },
+  "interests.show": {
+    "name": "interests.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\InterestController@show",
+    "uri": "interests/{interest}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "interests.edit": {
+    "name": "interests.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\InterestController@edit",
+    "uri": "interests/{interest}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "interests.update": {
+    "name": "interests.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\InterestController@update",
+    "uri": "interests/{interest}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "interests.destroy": {
+    "name": "interests.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\InterestController@destroy",
+    "uri": "interests/{interest}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "interests.data": {
+    "name": "interests.data",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\InterestController@data",
+    "uri": "interests/filter",
+    "method": [
+      "POST"
+    ]
+  },
+  "group.leader.create": {
+    "name": "group.leader.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GroupController@leaderCreate",
+    "uri": "group/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.leader.store": {
+    "name": "group.leader.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GroupController@leaderStore",
+    "uri": "group/create",
+    "method": [
+      "POST"
+    ]
+  },
+  "group.leader.biodata.create": {
+    "name": "group.leader.biodata.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\LeaderController@create",
+    "uri": "group/biodata/leader/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.leader.biodata.store": {
+    "name": "group.leader.biodata.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\LeaderController@store",
+    "uri": "group/biodata/leader/create",
+    "method": [
+      "POST"
+    ]
+  },
+  "group.leader.index": {
+    "name": "group.leader.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GroupController@leaderIndex",
+    "uri": "group",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.leader.edit": {
+    "name": "group.leader.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GroupController@leaderEdit",
+    "uri": "group/{id}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.leader.update": {
+    "name": "group.leader.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\GroupController@leaderUpdate",
+    "uri": "group/{id}",
+    "method": [
+      "PUT"
+    ]
+  },
+  "group.leader.biodata.index": {
+    "name": "group.leader.biodata.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\LeaderController@leaderIndex",
+    "uri": "group/biodata/leader",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.member.biodata.index": {
+    "name": "group.member.biodata.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MemberBioController@leaderIndex",
+    "uri": "group/biodata/members",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.member.biodata.create": {
+    "name": "group.member.biodata.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MemberBioController@leaderCreate",
+    "uri": "group/biodata/members/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.member.biodata.store": {
+    "name": "group.member.biodata.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MemberBioController@leaderStore",
+    "uri": "group/biodata/members/create",
+    "method": [
+      "POST"
+    ]
+  },
+  "group.member.biodata.edit": {
+    "name": "group.member.biodata.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MemberBioController@leaderEdit",
+    "uri": "group/biodata/members/{id}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.member.biodata.update": {
+    "name": "group.member.biodata.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MemberBioController@leaderUpdate",
+    "uri": "group/biodata/members/{id}",
+    "method": [
+      "PUT"
+    ]
+  },
+  "group.member.biodata.destroy": {
+    "name": "group.member.biodata.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MemberBioController@leaderDestroy",
+    "uri": "group/biodata/members/{id}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "group.companyProfile.index": {
+    "name": "group.companyProfile.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\CompanyProfileController@leaderIndex",
+    "uri": "group/company-profile",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.companyProfile.create": {
+    "name": "group.companyProfile.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\CompanyProfileController@leaderCreate",
+    "uri": "group/company-profile/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.companyProfile.store": {
+    "name": "group.companyProfile.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\CompanyProfileController@leaderStore",
+    "uri": "group/company-profile/create",
+    "method": [
+      "POST"
+    ]
+  },
+  "group.companyProfile.update": {
+    "name": "group.companyProfile.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\CompanyProfileController@leaderUpdate",
+    "uri": "group/company-profile/update",
+    "method": [
+      "PUT"
+    ]
+  },
+  "group.poster.index": {
+    "name": "group.poster.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PosterController@leaderIndex",
+    "uri": "group/poster",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.poster.create": {
+    "name": "group.poster.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PosterController@leaderCreate",
+    "uri": "group/poster/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.poster.store": {
+    "name": "group.poster.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PosterController@leaderStore",
+    "uri": "group/poster/create",
+    "method": [
+      "POST"
+    ]
+  },
+  "group.poster.update": {
+    "name": "group.poster.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PosterController@leaderUpdate",
+    "uri": "group/poster/update",
+    "method": [
+      "PUT"
+    ]
+  },
+  "group.productPlan.index": {
+    "name": "group.productPlan.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ProductPlanController@leaderIndex",
+    "uri": "group/product-plan",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.productPlan.create": {
+    "name": "group.productPlan.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ProductPlanController@leaderCreate",
+    "uri": "group/product-plan/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.productPlan.store": {
+    "name": "group.productPlan.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ProductPlanController@leaderStore",
+    "uri": "group/product-plan/create",
+    "method": [
+      "POST"
+    ]
+  },
+  "group.productPlan.update": {
+    "name": "group.productPlan.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ProductPlanController@leaderUpdate",
+    "uri": "group/product-plan/update",
+    "method": [
+      "PUT"
+    ]
+  },
+  "group.productPlan.list.index": {
+    "name": "group.productPlan.list.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ProductPlanListController@leaderIndex",
+    "uri": "group/product-plan/list",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.productPlan.list.create": {
+    "name": "group.productPlan.list.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ProductPlanListController@leaderCreate",
+    "uri": "group/product-plan/list/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.productPlan.list.store": {
+    "name": "group.productPlan.list.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ProductPlanListController@leaderStore",
+    "uri": "group/product-plan/list/create",
+    "method": [
+      "POST"
+    ]
+  },
+  "group.productPlan.list.edit": {
+    "name": "group.productPlan.list.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ProductPlanListController@leaderEdit",
+    "uri": "group/product-plan/list/{id}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "group.productPlan.list.update": {
+    "name": "group.productPlan.list.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ProductPlanListController@leaderUpdate",
+    "uri": "group/product-plan/list/{id}",
+    "method": [
+      "PUT"
+    ]
+  },
+  "group.productPlan.list.destroy": {
+    "name": "group.productPlan.list.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ProductPlanListController@leaderDestroy",
+    "uri": "group/product-plan/list/{id}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "members.leader.data": {
+    "name": "members.leader.data",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\MemberBioController@data",
+    "uri": "members/filter",
+    "method": [
+      "POST"
+    ]
+  }
+}
